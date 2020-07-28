@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 权重会叠加,不会有进位 */
+        /* ul中的li权重是 0,0,0,1 + 0,0,0,1 = 0,0,0,2 */
+    
+        ul li {
+            color: green;
+        }
+        /* li的权重是0,0,0,1 */
+        li {
+            color: red;
+        }
+    
+        /* .nav中的li权重是 0,0,1,0 + 0,0,0,1 = 0,0,1,1 */
+    
+        .nav li {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>猪蹄</li>
+        <li>肘子</li>
+        <li>尾巴</li>
+    </ul>
+    
+</body>
+</html>
